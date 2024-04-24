@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,600;0,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  background-color: #000000;
+  color: #fff;
+    font-family: public sans,sans-serif;
+}
+.Hero{
+    display: flex;
+    justify-content: center;
+    
+}
+.prtcards>img{
+    width: 210px;
+    border-radius: 10px;
+}
+
+.heroprt1{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.heroprt1>.prt1cards{
+    display: flex;
+    margin-left: 30%;
+}
+.prt1cards>.card1{
+    rotate: -32deg;
+    z-index: 1;
+    position: absolute;
+    left: 8%;
+}
+.prt1cards>.card2{
+    rotate: -5deg;
+    z-index: 2;
+    position: absolute;
+    top: -8%;
+    left: 17%;
+   
+}
+.heroprt1>.prt1cards2{
+    display: flex;
+}
+.prt1cards2>.card3{
+    position: absolute;
+    bottom: 7%;
+    left: -1.5%;
+    rotate: -25deg;
+
+}
+.prt1cards2>.card4{
+    position: absolute;
+    bottom: -6%;
+    rotate: 20deg;
+    left: 13%;
+}
+.heroprt2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+    margin-top: 3%;
+}
+.heroprt2>h1{
+    font-size: 4rem;
+}
+.heroprt2>p{
+    font-size: 1.4rem;
+    line-height: 30px;
+    color: #7e7b7b;
+    font-weight: bold;
+}
+.heroprt2>span{
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.heroprt2>button{
+    width: 21vw;
+    padding: 1.2rem;
+    background:linear-gradient(to right, #10e3b9 0%, #edbf05  51%, #c78d0e  60%, #e14d08  100%);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.4rem;
+   position: relative;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+    color: #fff;
+}
+
+.heroprt2>button:hover{
+    scale: 1.085;
+    box-shadow: 0px 0px 30px 10px #e99e1d70;
+
+}
+
+         
+
+ 
+.heroprt3>.herocard1{
+    position: absolute;
+    right: 15%;
+    top: -6%;
+    rotate: 20deg;
+    animation: card1 5s 2;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.heroprt3>.herocard2{
+    position: absolute;
+    right: 8%;
+    top: 17%;
+    rotate: -20deg;
+    animation: card2 5s 2;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.heroprt3>.herocard3{
+    position: absolute;
+    right: 15%;
+    bottom: 10%;
+    rotate: -30deg;
+    animation: card3 5s 2;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+.heroprt3>.herocard4{
+    position: absolute;
+    right: 2%;
+    bottom: -10%;
+    rotate: 10deg;
+    animation: card4 5s 2;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+   
+}
+@keyframes card1{
+    0%{
+        right: 15%;
+    top: -6%;
+    rotate: 20deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+    
+}
+@keyframes card2{
+    0%{
+        top: 17%;
+    rotate: -20deg;
+    }
+    100%{
+        top: 0;
+        rotate: 0deg;
+    }
+}
+@keyframes card3{
+    0%{
+        bottom: 10%;
+        rotate: -30deg;
+    }
+    100%{
+        bottom: 60%;
+        rotate: 0deg;
+    }
+}
+@keyframes card4{
+    0%{
+        bottom: -10%;
+        rotate: 10deg;
+    }
+    100%{
+        bottom: 60%;
+        rotate: 0deg;
+    }
+}
+
+.sec1{
+    display: flex;
+    position: relative;
+    margin-top: 20%;
+    justify-content: space-evenly;
+}
+.seccard1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sec1>.seccard1{
+    background-color: #b82323;
+    border: 25px solid #cf2e2e;
+    padding: 9rem 4rem;
+    border-radius: 15px;
+    position: absolute;
+    top: -25%;
+    rotate: -20deg;
+    left: 10%;
+    z-index: 10;
+   
+}
+.sec1>.seccard1 h1{
+    color: #fff;
+    background-color: #b82323;
+    font-size: 2.2rem;
+    text-align: center;
+}
+.sec1>.seccard1 p{
+    color: #fff;
+    background-color: #b82323;
+    text-align: center;
+    font-size: 1.4rem;
+}
+.sec1>img{
+    margin-left: 45%;
+    width:750px;
+    height: 700px;
+  border-radius: 50%;
+  margin-top: -10%;
+}
+
+.sec2{
+    display: flex;
+    position: relative;
+
+}
+.sec2>img{
+    width: 720px;
+    height: 700px;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-top: -10%;
+}
+.seccard2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sec2>.seccard2{
+    background-color: #f0ab09;
+    border: 25px solid #e9d81aa5;
+    padding: 9rem 4rem;
+    border-radius: 15px;
+    position: absolute;
+    top: -5%;
+    rotate: 20deg;
+    left: 50%;
+    z-index: 10;
+   
+}
+.sec2>.seccard2 h1{
+    color: #fff;
+    background-color: #f0ab09;
+    font-size: 2.2rem;
+    text-align: center;
+}
+.sec2>.seccard2 p{
+    color: #fff;
+    background-color: #f0ab09;
+    text-align: center;
+    font-size: 1.4rem;
+}
+@media(max-width:430px){
+   .wrapper{
+    overflow: hidden;
+   }
+   .prtcards>img{
+    width: 190px;
+    border-radius: 10px;
+}
+.heroprt2>span{
+    background:transparent;
+}
+.heroprt3>.herocard2{
+    right: 15%;
+}
+.heroprt3>.herocard3{
+    right: 30%;
+}
+.heroprt3>.herocard4{
+    right: 50%;
+}
+
+    .heroprt1{
+        display: none;
+    }
+    .heroprt3{
+        z-index: 1;
+    }
+    .heroprt2{
+        z-index: 20;
+        background: transparent;
+        backdrop-filter: blur(20px);
+        padding: 1rem;
+        margin-top: 0;
+        height: 120vh;
+        gap: 30px;
+    }
+    .heroprt2>img{
+        background: transparent;
+    }
+    .heroprt2>h1{
+        background: transparent;
+        font-size: 3rem;
+        
+    }
+    .heroprt2>h1 br{
+        display: none;
+    }
+    .heroprt2>p{
+        background: transparent;
+        color: #fff;
+        font-size: 1rem;
+    }
+    .heroprt2>p  br{
+        display: none;
+    }
+    .heroprt2>button{
+        width: 100%;
+        padding: .9rem;
+        font-size: 1.1rem;
+    }
+    .sec1>.seccard1{
+        padding: 6rem 2rem;
+        top: -8%;
+       
+    }
+    .sec1>.seccard1 h1{
+        color: #fff;
+        background-color: #b82323;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .sec1>.seccard1 p{
+        color: #fff;
+        background-color: #b82323;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .seccard1>p br{
+        display: none;
+    }
+    .sec1>img{
+        width: 350px;
+        height: 350px;
+        margin-top: 75%;
+        margin-left: 0%;
+    }
+    .sec2>img{
+        width: 350px;
+        height: 350px;
+        margin-top: 95%;
+    }
+    .sec2>.seccard2{
+        padding: 4rem  3rem;
+        left: 0;
+    }
+    .sec2>.seccard2 h1{
+        font-size: 2rem;
+    }
+    .sec2>.seccard2 h1 br{
+        display: none;
+    }
+}
+@media(max-width:325px){
+    .heroprt2{
+        gap: 50px;
+    }
+    .heroprt2>img{
+        background: transparent;
+    }
+    .heroprt2>h1{
+        background: transparent;
+        font-size: 2rem
+        
+    }
+    .heroprt2>p{
+        background: transparent;
+        color: #fff;
+        font-size: 1rem;
+        line-height: 22px;
+    }
+    .heroprt2>p br{
+        display: none;
+    }
+    .heroprt2>button{
+        width: 100%;
+        padding: .8rem;
+        font-size: .9rem;
+    }
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+footer>img{
+    width: 380px;
+}
+footer>h1{
+    font-size: 4rem;
+    text-align: center;
+}
+footer>p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+footer>p span{
+    background-color:whitesmoke;
+    padding: .2rem .5rem;
+    color: #3f3d3d;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all .2s ease-in-out;
+
+}
+footer>p span:hover{
+    background-color: green;
+    color: #fff;
+    box-shadow: 0px 0px 20px green;
+}
+@media(max-width:430px){
+    footer{
+        padding: 1rem;
+    }
+    footer>img{
+        width: 300px;
+    }
+    footer>h1{
+        font-size: 3rem;
+        text-align: center;
+    }
+    footer>p{
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+@media(max-width:325px){
+    footer>h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+}
